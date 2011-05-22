@@ -1,0 +1,21 @@
+A really simple slide scroll plugin for jQuery, no special slide effects, just slide from right to left.
+
+ * The options:
+ * 		step: How many items scrolled each time, default 1
+ *  	duration: Default 800(ms)
+ *  	backElem: click to previous slide, {jQuery Selector/DOM Object/jQuery Object}
+ *  	nextElem: click to next slide, {jQuery Selector/DOM Object/jQuery Object}
+ *  	nextCallBack: called after sliding to next
+ *  	prevCallBack: called after sliding to previous
+ *  
+ * The HTML should be matched the structure as bellow:
+ * 	<div id="wrapper">
+ * 		<div>First slide contents</div>
+ * 		<div>Second slide contents</div>
+ *  </div>
+ *
+ * Setting CSS properly: all the slides display as inline-block and the 
+ * width of wrapper should greater than sum of all slides
+ *  
+ * Usage:
+ * 		$('#slideWrapper').slideshow(options);
